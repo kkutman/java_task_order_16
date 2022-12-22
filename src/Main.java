@@ -21,7 +21,8 @@ public class Main {
                     2 groping by gender
                     3 remuve name
                     4 get age map
-                    5 reverse name""");
+                    5 reverse name
+                    6 fin by id""");
             int num = scanner.nextInt();
             switch (num) {
                 case 1:
@@ -42,6 +43,9 @@ public class Main {
                     String f= scanner.nextLine();
                     System.out.println("ddx");
                     System.out.println(orderServices.name(scanner.nextLine()));
+                    break;
+                case 6:
+                    System.out.println(orderServices.finById(scanner.nextLong()));
                     break;
 
             }

@@ -11,4 +11,5 @@ public interface OrderInterfaceAble {
     Map<Integer, Order> getAge();
     String name(String name);
     Map<Gender, List<Order>> groupingByGender();
+    public Order finById(Long id);
 }

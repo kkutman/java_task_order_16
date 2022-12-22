@@ -58,4 +58,12 @@ public class OrderServicesImpl implements OrderInterfaceAble {
     public Map<Gender,List<Order>> groupingByGender() {
         return orders.stream().collect(Collectors.groupingBy(Order::getGender));
     }
+    public Order finById(Long id){
+        for (Order order : this.orders) {
+            if(order.getId()==id){
+                return order;
+            }
+        }
+        return null;
+    }
 }
